@@ -27,4 +27,16 @@ public class SchoolServices {
     public void addGrade(Grade grade) {
         this.school.getGrades().add(grade);
     }
+
+    public void removeStudent(Student student) {
+        this.school.getStudents().remove(student);
+    }
+
+    public void removeTeacher(Teacher teacher) {
+        this.school.getTeachers().remove(teacher);
+    }
+
+    public void removeGrade(Grade grade) {
+        this.school.getGrades().remove(grade);
+    }
 }
