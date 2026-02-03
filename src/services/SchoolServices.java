@@ -42,7 +42,7 @@ public class SchoolServices {
 
     public Student getStudentByName(String name) {
         for(Student student : this.school.getStudents()) {
-            if(student.getName().equals(name)) {
+            if(student.getName().toUpperCase().equals(name.toUpperCase())) {
                 return student;
             }
         }
@@ -51,7 +51,7 @@ public class SchoolServices {
 
     public Teacher getTeacherByName(String name) {
         for(Teacher teacher : this.school.getTeachers()) {
-            if(teacher.getName().equals(name)) {
+            if(teacher.getName().toUpperCase().equals(name.toUpperCase())) {
                 return teacher;
             }
         }

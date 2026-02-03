@@ -11,6 +11,11 @@ public class Student extends Person {
     public Student() {
     }
 
+    @Override
+    public String getData() {
+        return this.getName() + " " + this.getAge() +  " " + this.getParentPhoneNumber();
+    }
+
     public String getParentPhoneNumber() {
         return parentPhoneNumber;
     }

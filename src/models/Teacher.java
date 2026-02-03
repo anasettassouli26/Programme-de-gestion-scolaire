@@ -11,6 +11,11 @@ public class Teacher extends Person {
     public Teacher() {
     }
 
+    @Override
+    public String getData() {
+        return this.getName() + " " + this.getAge() + " " +  this.getSalary();
+    }
+
     public float getSalary() {
         return salary;
     }
