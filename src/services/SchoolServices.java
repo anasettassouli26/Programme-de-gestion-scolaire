@@ -39,4 +39,31 @@ public class SchoolServices {
     public void removeGrade(Grade grade) {
         this.school.getGrades().remove(grade);
     }
+
+    public Student getStudentByName(String name) {
+        for(Student student : this.school.getStudents()) {
+            if(student.getName().equals(name)) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    public Teacher getTeacherByName(String name) {
+        for(Teacher teacher : this.school.getTeachers()) {
+            if(teacher.getName().equals(name)) {
+                return teacher;
+            }
+        }
+        return null;
+    }
+
+    public Grade getGradeByName(String name) {
+        for(Grade grade : this.school.getGrades()) {
+            if(grade.getName().equals(name)) {
+                return grade;
+            }
+        }
+        return null;
+    }
 }
