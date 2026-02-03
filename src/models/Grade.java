@@ -44,4 +44,12 @@ public class Grade {
     public ArrayList<Student> getStudents() {
         return students;
     }
+
+    public void addStudent(Student student) {
+        this.students.add(student);
+    }
+
+    public void removeStudent(Student student) {
+        this.students.remove(student);
+    }
 }
